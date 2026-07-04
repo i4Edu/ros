@@ -13,7 +13,7 @@
     <meta property="og:image" content="https://github-production-user-asset-6210df.s3.amazonaws.com/42666125/268474454-db4c78e4-5abf-4c08-b3ae-c03fe6567469.png">
     <meta property="og:image:alt" content="Queue QoS Priority for (Youtube, Tiktok, Facebook, WhatsApp, etc) By Buananetpbun.Github.io">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://ros-eight.vercel.app/mikrotik-queue-qos.html">  
+    <meta property="og:url" content="https://i4edu.github.io/ros/mikrotik-queue-qos.html">  
     <link rel="stylesheet" href="./login/login.css">
     <style>
       /* ------------------------------------------------------------------
@@ -202,13 +202,13 @@
           add parent=global priority=<span style="color:#ff6600" id="queue-tree-priority-down">8</span> max-limit="<span style="color:#ff6600"><span id="queue-tree-max-down">20M</span></span>" name="<span style="color:#ff6600"><span id="queue-tree-name-down">-> YOUTUBE</span> DOWN</span>" packet-mark="<span style="color:#ff6600"><span id="queue-tree-packet-down">Youtube</span>-Down</span>"<br>
           </span>
           <b>/ip firewall mangle</b><br>
-          add action=<span style="color:#ff6600">mark-connection</span> chain=<span style="color:#ff6600">forward</span> new-connection-mark="<span style="color:#ff6600"><span id="Connection-Mark-1">Youtube</span>-conn</span>" dst-address-list="<span style="color:#ff6600">Mikrotik-<span id="add-list">Youtube</span></span>" passthrough=<span style="color:#ff6600">yes</span> src-address-list=<span style="color:#ff6600">LOCAL-IP</span> comment="<span style="color:#ff6600"><span id="comment-mangle">Youtobe</span> Mangle - ros-eight.vercel.app</span>"<br>
+          add action=<span style="color:#ff6600">mark-connection</span> chain=<span style="color:#ff6600">forward</span> new-connection-mark="<span style="color:#ff6600"><span id="Connection-Mark-1">Youtube</span>-conn</span>" dst-address-list="<span style="color:#ff6600">Mikrotik-<span id="add-list">Youtube</span></span>" passthrough=<span style="color:#ff6600">yes</span> src-address-list=<span style="color:#ff6600">LOCAL-IP</span> comment="<span style="color:#ff6600"><span id="comment-mangle">Youtobe</span> Mangle - i4edu.github.io/ros</span>"<br>
           add action=<span style="color:#ff6600">mark-packet</span> chain=<span style="color:#ff6600">forward</span> connection-mark="<span style="color:#ff6600"><span id="Connection-Mark-2">Youtube</span>-conn</span>" src-address-list=<span style="color:#ff6600">LOCAL-IP</span> new-packet-mark="<span style="color:#ff6600"><span id="Packet-Mark-1">Youtube</span>-Up</span>" passthrough=<span style="color:#ff6600">no</span><br>
           add action=<span style="color:#ff6600">mark-packet</span> chain=<span style="color:#ff6600">forward</span> connection-mark="<span style="color:#ff6600"><span id="Connection-Mark-3">Youtube</span>-conn</span>" dst-address-list=<span style="color:#ff6600">LOCAL-IP</span> new-packet-mark="<span style="color:#ff6600"><span id="Packet-Mark-2">Youtube</span>-Down</span>" passthrough=<span style="color:#ff6600">no</span><br>
           <b>/ip firewall address-list</b><br>
-          add address=<span style="color:#ff6600">192.168.0.0/16</span> list=<span style="color:#ff6600">LOCAL-IP</span> comment="<span style="color:#ff6600">LOCAL IP - ros-eight.vercel.app</span>"<br>
-          add address=<span style="color:#ff6600">172.16.0.0/12</span> list=<span style="color:#ff6600">LOCAL-IP</span> comment="<span style="color:#ff6600">LOCAL IP - ros-eight.vercel.app</span>"<br>
-          add address=<span style="color:#ff6600">10.0.0.0/8</span> list=<span style="color:#ff6600">LOCAL-IP</span> comment="<span style="color:#ff6600">LOCAL IP - ros-eight.vercel.app</span>"<br>
+          add address=<span style="color:#ff6600">192.168.0.0/16</span> list=<span style="color:#ff6600">LOCAL-IP</span> comment="<span style="color:#ff6600">LOCAL IP - i4edu.github.io/ros</span>"<br>
+          add address=<span style="color:#ff6600">172.16.0.0/12</span> list=<span style="color:#ff6600">LOCAL-IP</span> comment="<span style="color:#ff6600">LOCAL IP - i4edu.github.io/ros</span>"<br>
+          add address=<span style="color:#ff6600">10.0.0.0/8</span> list=<span style="color:#ff6600">LOCAL-IP</span> comment="<span style="color:#ff6600">LOCAL IP - i4edu.github.io/ros</span>"<br>
         </div>
       </div>
       <div class="footer">
