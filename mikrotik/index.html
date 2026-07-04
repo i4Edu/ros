@@ -283,7 +283,7 @@
             </tr>
             <tr>
               <td>
-                <p><a class="linkPress" href="./Bypass-Full-Speed-Local-Transfer-File.html" onclick="getcontent(this); return truefalseFunction(x);">Bypass Full Speed Locat Transfer File</a></p>
+                <p><a class="linkPress" href="./Bypass-Full-Speed-Local-Transfer-File.html" onclick="getcontent(this); return truefalseFunction(x);">Bypass Full Speed Local Transfer File</a></p>
               </td>
             </tr>
             <tr>
@@ -547,7 +547,7 @@
             </tr>
             <tr>
               <td>
-                <p><a class="linkPress" href="./script-to-find-the-day-of-the-week.html" onclick="getcontent(this); return truefalseFunction(x);">Calculates Day Of The Week For a Givien Date</a></p>
+                <p><a class="linkPress" href="./script-to-find-the-day-of-the-week.html" onclick="getcontent(this); return truefalseFunction(x);">Calculates Day Of The Week For a Given Date</a></p>
               </td>
             </tr>
             <tr>
@@ -1142,17 +1142,17 @@
             </tr>
             <tr>
               <td>
-                <p><a class="linkPress" href="./Mangle-and-Port-UltraViewer.html" onclick="getcontent(this); return truefalseFunction(x);">Mangle and Port UltraViewer (Remote Dekstop)</a></p>
+                <p><a class="linkPress" href="./Mangle-and-Port-UltraViewer.html" onclick="getcontent(this); return truefalseFunction(x);">Mangle and Port UltraViewer (Remote Desktop)</a></p>
               </td>
             </tr>
             <tr>
               <td>
-                <p><a class="linkPress" href="./Mangle-and-Port-TeamViewer.html" onclick="getcontent(this); return truefalseFunction(x);">Mangle and Port TeamViewer (Remote Dekstop)</a></p>
+                <p><a class="linkPress" href="./Mangle-and-Port-TeamViewer.html" onclick="getcontent(this); return truefalseFunction(x);">Mangle and Port TeamViewer (Remote Desktop)</a></p>
               </td>
             </tr>
             <tr>
               <td>
-                <p><a class="linkPress" href="./Mangle-and-Port-AnyDesk.html" onclick="getcontent(this); return truefalseFunction(x);">Mangle and Port AnyDesk (Remote Dekstop)</a></p>
+                <p><a class="linkPress" href="./Mangle-and-Port-AnyDesk.html" onclick="getcontent(this); return truefalseFunction(x);">Mangle and Port AnyDesk (Remote Desktop)</a></p>
               </td>
             </tr>
             <tr>
@@ -1871,16 +1871,19 @@ elements_disable[i].setAttribute('disabled', true);
                    (contact ? '%0AContact: ' + encodeURIComponent(contact) : '') +
                    '%0A%0AScript:%0A' + encodeURIComponent(script);
         var mailto = 'mailto:ros@i4edu.com?subject=' + encodeURIComponent('[Script Contribution] ' + name) + '&body=' + body;
-        window.location.href = mailto;
-        setTimeout(function() {
-          msg.style.display = 'block';
-          msg.style.background = '#1a3a1a';
-          msg.style.color = '#6f6';
-          msg.style.border = '1px solid #3a6a3a';
-          msg.textContent = '✅ Thank you! Your email client should open. Please send the email to submit your script.';
-          btn.disabled = false;
-          btn.textContent = 'Submit Script';
-        }, 500);
+        var link = document.createElement('a');
+        link.href = mailto;
+        link.style.display = 'none';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        msg.style.display = 'block';
+        msg.style.background = '#1a3a1a';
+        msg.style.color = '#6f6';
+        msg.style.border = '1px solid #3a6a3a';
+        msg.textContent = '✅ Thank you! Your email client should open. Please send the email to submit your script.';
+        btn.disabled = false;
+        btn.textContent = 'Submit Script';
       }
     </script>
 		
