@@ -13,7 +13,7 @@
     <meta property="og:image" content="/img/mikrotik-bloked.png">
     <meta property="og:image:alt" content="MikroTik Block (Youtube, Tiktok, Facebook, WhatsApp, etc)">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://ros-eight.vercel.app/mikrotik-access-block.html">  
+    <meta property="og:url" content="https://i4edu.github.io/ros/mikrotik-access-block.html">  
     <link rel="stylesheet" href="./login/login.css">
     <style>
       /* ------------------------------------------------------------------
@@ -114,7 +114,7 @@
       <div class="logo">
         <div class="logo-right" style="float:right;">        </div>
         <div class="logo-left" style="float:left;"> 
-          <a href="/"><img alt="ros-eight.vercel.app" style="float:left; margin-top:0px;margin-right:5px" width='35' src="./img/mylogo.png"><span style='color:#ff6600 !important'>Router</span>OS Tools</a>    
+          <a href="/"><img alt="i4edu.github.io/ros" style="float:left; margin-top:0px;margin-right:5px" width='35' src="./img/mylogo.png"><span style='color:#ff6600 !important'>Router</span>OS Tools</a>    
         </div>
       </div>
       <div style="clear:both"></div>
@@ -166,15 +166,15 @@
         <div class='list-output-content' id="list-output-content" style="font-size:13px;">
           <span style="color:green">## STEP 1 - Copy Paste to Terminal</span><br>
           /file remove "<span style="color:#ff6600">Mikrotik-<span id='remove1'>Youtube</span>.rsc</span>"<br>
-          /tool fetch url="https://ros-eight.vercel.app/mikrotik-routeros-rsc/<span style="color:#ff6600">Mikrotik-<span id='tool-fetch'>Youtube</span>.rsc</span>" dst-path="<span style="color:#ff6600">Mikrotik-<span id="dst-path">Youtube</span>.rsc</span>"<br>
+          /tool fetch url="https://i4edu.github.io/ros/mikrotik-routeros-rsc/<span style="color:#ff6600">Mikrotik-<span id='tool-fetch'>Youtube</span>.rsc</span>" dst-path="<span style="color:#ff6600">Mikrotik-<span id="dst-path">Youtube</span>.rsc</span>"<br>
         </div>
         <button style="float:right; margin-top:10px; margin-bottom:10px; font-weight:bold;font-size:13px" type="button" onclick="selectElementContents(document.getElementById('list-output-content2'))">Copy STEP 2</button>		
         <div class='list-output-content2' id="list-output-content2" style="font-size:13px;">
           <span style="color:green">## STEP 2 - Copy Paste to Terminal</span><br>	
           /import file-name="<span style="color:#ff6600">Mikrotik-<span id="import-file">Youtube</span>.rsc</span>"<br>
           /file remove "<span style="color:#ff6600">Mikrotik-<span id='remove2'>Youtube</span>.rsc</span>"<br>		  
-          /ip firewall filter add action=drop chain=forward disabled=no dst-address-list="<span style="color:#ff6600">Mikrotik-<span id="add-list1">Youtube</span></span>" comment="<span style="color:#ff6600">Block <span id="comment1">Youtube</span> - ros-eight.vercel.app</span>" <br>
-          /ip firewall raw add action=drop chain=forward disabled=no dst-address-list="<span style="color:#ff6600">Mikrotik-<span id="add-list2">Youtube</span></span>" comment="<span style="color:#ff6600">Block <span id="comment2">Youtube</span> - ros-eight.vercel.app</span>" <br> 
+          /ip firewall filter add action=drop chain=forward disabled=no dst-address-list="<span style="color:#ff6600">Mikrotik-<span id="add-list1">Youtube</span></span>" comment="<span style="color:#ff6600">Block <span id="comment1">Youtube</span> - i4edu.github.io/ros</span>" <br>
+          /ip firewall raw add action=drop chain=forward disabled=no dst-address-list="<span style="color:#ff6600">Mikrotik-<span id="add-list2">Youtube</span></span>" comment="<span style="color:#ff6600">Block <span id="comment2">Youtube</span> - i4edu.github.io/ros</span>" <br> 
           /ip firewall address-list add address=<span style="color:#ff6600">192.168.0.0/16</span> list=<span style="color:#ff6600">LOCAL-IP</span> comment="<span style="color:#ff6600">LOCAL IP - buananet.com</span>"<br>
           /ip firewall address-list add address=<span style="color:#ff6600">172.16.0.0/12</span> list=<span style="color:#ff6600">LOCAL-IP</span> comment="<span style="color:#ff6600">LOCAL IP - buananet.com</span>"<br>
           /ip firewall address-list add address=<span style="color:#ff6600">10.0.0.0/8</span> list=<span style="color:#ff6600">LOCAL-IP</span> comment="<span style="color:#ff6600">LOCAL IP - buananet.com</span>"<br>        
@@ -182,7 +182,7 @@
       </div>
       <div class="footer">
         <div style="float:right;margin-top:8px">    
-          <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fros-eight.vercel.app%2F&count_bg=%23696C67&title_bg=%233B860B&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false" alt="Hits">
+          <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fi4edu.github.io%2Fros%2F&count_bg=%23696C67&title_bg=%233B860B&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false" alt="Hits">
         </div>	
         © <span id="year">2024</span> RouterOS Tools
 

@@ -1,4 +1,4 @@
 User-agent: *
 allow: /
 
-Sitemap: https://ros-eight.vercel.app/mikrotik/sitemap.xml
+Sitemap: https://i4edu.github.io/ros/mikrotik/sitemap.xml

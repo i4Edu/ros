@@ -13,7 +13,7 @@
     <meta property="og:image" content="https://github-production-user-asset-6210df.s3.amazonaws.com/42666125/266087766-fb159bed-9cdf-4532-8ea6-f9840459f42e.png">
     <meta property="og:image:alt" content="MikroTik Static Routing (Youtube, Tiktok, Facebook, WhatsApp, etc) By Buananetpbun.Github.io">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://ros-eight.vercel.app/mikrotik-static-routing.html">  
+    <meta property="og:url" content="https://i4edu.github.io/ros/mikrotik-static-routing.html">  
     <link rel="stylesheet" href="./login/login.css">
     <style>
       /* ------------------------------------------------------------------
@@ -195,11 +195,11 @@
           /routing table add name="<span style="color:#ff6600" id="routing-table">To-ISP-1</span>" fib comment="<span style="color:#ff6600">Route by RouterOS Tools</span>"<br>
           /ip route add check-gateway=ping distance=1 gateway="<span style="color:#ff6600" id="ip-gateway2">0.0.0.0</span>" routing-table="<span style="color:#ff6600" id="ip-routing2">To-ISP-1</span>" comment="<span style="color:#ff6600">Route by RouterOS Tools</span>" <br> 
           </span>	
-          /ip firewall mangle rem [find comment="<span style="color:#ff6600"><span id="comment1">Youtube</span> - ros-eight.vercel.app</span>"]<br>
-          /ip firewall mangle add action=mark-routing chain=prerouting src-address-list=<span style="color:#ff6600">LOCAL-IP</span> dst-address-list="<span style="color:#ff6600">Mikrotik-<span id="add-list">Youtube</span></span>" new-routing-mark="<span style="color:#ff6600" id="new-routing-mark">To-ISP-1</span>" comment="<span style="color:#ff6600"><span id="comment2">Youtube</span> - ros-eight.vercel.app</span>" passthrough=no place-before=*0<br>
-          /ip firewall address-list add address=<span style="color:#ff6600">192.168.0.0/16</span> list=<span style="color:#ff6600">LOCAL-IP</span> comment="<span style="color:#ff6600">LOCAL IP - ros-eight.vercel.app</span>"<br>
-          /ip firewall address-list add address=<span style="color:#ff6600">172.16.0.0/12</span> list=<span style="color:#ff6600">LOCAL-IP</span> comment="<span style="color:#ff6600">LOCAL IP - ros-eight.vercel.app</span>"<br>
-          /ip firewall address-list add address=<span style="color:#ff6600">10.0.0.0/8</span> list=<span style="color:#ff6600">LOCAL-IP</span> comment="<span style="color:#ff6600">LOCAL IP - ros-eight.vercel.app</span>"<br>
+          /ip firewall mangle rem [find comment="<span style="color:#ff6600"><span id="comment1">Youtube</span> - i4edu.github.io/ros</span>"]<br>
+          /ip firewall mangle add action=mark-routing chain=prerouting src-address-list=<span style="color:#ff6600">LOCAL-IP</span> dst-address-list="<span style="color:#ff6600">Mikrotik-<span id="add-list">Youtube</span></span>" new-routing-mark="<span style="color:#ff6600" id="new-routing-mark">To-ISP-1</span>" comment="<span style="color:#ff6600"><span id="comment2">Youtube</span> - i4edu.github.io/ros</span>" passthrough=no place-before=*0<br>
+          /ip firewall address-list add address=<span style="color:#ff6600">192.168.0.0/16</span> list=<span style="color:#ff6600">LOCAL-IP</span> comment="<span style="color:#ff6600">LOCAL IP - i4edu.github.io/ros</span>"<br>
+          /ip firewall address-list add address=<span style="color:#ff6600">172.16.0.0/12</span> list=<span style="color:#ff6600">LOCAL-IP</span> comment="<span style="color:#ff6600">LOCAL IP - i4edu.github.io/ros</span>"<br>
+          /ip firewall address-list add address=<span style="color:#ff6600">10.0.0.0/8</span> list=<span style="color:#ff6600">LOCAL-IP</span> comment="<span style="color:#ff6600">LOCAL IP - i4edu.github.io/ros</span>"<br>
         </div>
       </div>
       <div class="footer">
