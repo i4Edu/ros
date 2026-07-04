@@ -1,4 +1,4 @@
 User-agent: *
 allow: /
 
-Sitemap: https://buananetpbun.github.io/mikrotik/sitemap.xml
+Sitemap: https://ros-eight.vercel.app/mikrotik/sitemap.xml
